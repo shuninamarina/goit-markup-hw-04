@@ -197,7 +197,8 @@ address {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
   height: 600px;
   left: 0px;
   top: 80px;
@@ -407,7 +408,6 @@ address {
 }
 
 .clients-social-item {
-  width: calc(100% / 6 - 30px);
   margin-left: 30px;
 }
 
@@ -469,6 +469,7 @@ address {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-first {
@@ -507,7 +508,6 @@ address {
 .footer-social-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;
 }
 
 .footer-social-item+.footer-social-item {
@@ -619,8 +619,8 @@ address {
   border-top: none;
 }
 
-.portfolio-shadow:hover,
-.portfolio-shadow:focus {
+.portfolio-pic:hover,
+.portfolio-pic:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
