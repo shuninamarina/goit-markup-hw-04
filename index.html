@@ -57,7 +57,7 @@
       <div class="container">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
         <div class="hero-button">
-          <button type="button" class="button-primary">
+          <button type="button" class="button-primary" data-modal-open>
             Замовити послугу
           </button>
         </div>
@@ -103,14 +103,28 @@
       <div class="container">
         <h2 class="section-title">Чим ми займаємося</h2>
         <ul class="picture-work">
+
           <li class="images-work">
-            <img src="./images/box1.jpg" alt="фото1" width="370" />
+            <div class="thumb-works">
+              <img src="./images/box1.jpg" alt="фото1" width="370" />
+              <p class="images-text">Десктопні додатки</p>
+            </div>
+
+
           </li>
           <li class="images-work">
-            <img src="./images/box2.jpg" alt="фото2" width="370" />
+            <div class="thumb-works">
+              <img src="./images/box2.jpg" alt="фото2" width="370" />
+              <p class="images-text">Мобільні додатки</p>
+            </div>
+
+
           </li>
           <li class="images-work">
-            <img src="./images/box3.jpg" alt="фото3" width="370" />
+            <div class="thumb-works">
+              <img src="./images/box3.jpg" alt="фото3" width="370" />
+              <p class="images-text">Дизайнерські рішення</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -378,6 +392,20 @@
     </div>
     </div>
   </footer>
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button data-modal-close class="close">
+        <svg>
+          <use href="./images/sprite.svg#close">
+          </use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <script src="./js/modal.js"></script>
+</body>
 </body>
 
 </html>
