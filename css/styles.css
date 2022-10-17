@@ -457,13 +457,11 @@ address {
   border-radius: 50%;
   color: #afb1b8;
 
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-icon {
   fill: currentColor;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-link:hover,
@@ -496,7 +494,7 @@ address {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-social-link:hover,
@@ -508,7 +506,6 @@ address {
 
 .clients-social-icon {
   fill: currentColor;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-social-icon:hover,
@@ -684,20 +681,20 @@ address {
   margin-left: var(--min-gap);
   margin-top: var(--min-gap);
   width: calc((100 - 90) / 3);
+}
 
+.link-pic {
+  display: block;
+  text-decoration: none;
+  color: var(--text-color);
   overflow: hidden;
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-pic:hover,
-.portfolio-pic:focus {
+.link-pic:hover,
+.link-pic:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.link-pic {
-  text-decoration: none;
-  color: var(--text-color);
 }
 
 .portfolio-wrapper {
@@ -805,6 +802,7 @@ address {
   left: 0;
 
   background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
