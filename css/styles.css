@@ -218,7 +218,7 @@ address {
 
 .connection-icon {
   fill: var(--text-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* hero */
@@ -729,7 +729,8 @@ address {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-pic:hover .overlay {
+.link-pic:hover .overlay,
+.link-pic:focus .overlay {
   transform: translateY(0);
 }
 
